@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy JAR app to Azure Web App - SpringRest
+name: Build and deploy JAR app to Azure Web App - spring1
 
 on:
   push:
@@ -47,7 +47,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'SpringRest'
+          app-name: 'spring1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6c6336149d3540e4a8cb037167aeaceb }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_bab83bed72ee4cf487bb5addb26074ed }}
           package: '*.jar'
